@@ -25,15 +25,6 @@ namespace Calculator.Controllers
                 { "multiplication", " * " }
             };
 
-        //private void CleanFunctionsSelected()
-        //{
-        //    ViewBag.Title = string.Empty;
-        //    ViewBag.AdditionSelected = false;
-        //    ViewBag.SubtractionSelected = false;
-        //    ViewBag.DivisionSelected = false;
-        //    ViewBag.MultiplicationSelected = false;
-        //}
-
         public static decimal FuncAddition(decimal arg1, decimal arg2)
         {
             return arg1 + arg2;
