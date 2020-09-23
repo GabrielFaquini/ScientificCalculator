@@ -36,6 +36,16 @@ namespace UnitTestCalculator
 
             Assert.AreEqual(result, arg1 / arg2);
         }
+        
+        [TestMethod]
+        public void FuncDivision_ByZero_Success()
+        {
+            decimal arg1 = Decimal.Parse("3,7");
+            decimal arg2 = Decimal.Parse("0,0");
+            var result = StandardCalculatorController.FuncDivision(arg1, arg2);
+
+            Assert.AreEqual(result, 0);
+        }
 
         [TestMethod]
         public void FuncMultiplication_PositiveNumbers_Success()
